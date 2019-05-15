@@ -1,4 +1,6 @@
-Data.mat is the preprocessed data. It included computed dynamic brain network tensor F1 and F2.
+data.mat is the preprocessed data. It included computed dynamic brain network tensor F1 and F2.
+data.mat can be downloaded here:
+
 F1 is cognitive impaired and F2 is unimpaired.
 The size of F1, F2 is:
 Number of subjects*Augmented number* sliding window * features
@@ -15,3 +17,5 @@ Just simple run the code:
 python train_test.py to train and test the model.
 
 You can change the training parameters in the file train_rnn.py or train_rnn_fc.py.
+
+I will update the code to convert the data to data.mat format soon.
