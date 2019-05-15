@@ -3,7 +3,7 @@ data.mat can be downloaded here:
 
 F1 is cognitive impaired and F2 is unimpaired.
 The size of F1, F2 is:
-Number of subjects*Augmented number* sliding window * features
+Number of subjects*Augmented number* sliding window * features (20*20 for the cnn model, 400 for the fc model)
 
 Please install tensorflow, keras to run this code
 
