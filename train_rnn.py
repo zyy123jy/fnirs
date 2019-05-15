@@ -142,7 +142,7 @@ def train_model(X,y,f1,f2):
     sgd = optimizers.SGD(lr=0.00005, decay=1e-6, momentum=0.9, nesterov=True)
     adam = optimizers.Adam(lr=0.00001)
     model.compile(optimizer=adam, loss=custom_crossentropy,metrics=[custom_accuracy])
-    history = model.fit(X, y, epochs=50, batch_size=32, validation_split=0.05,shuffle=True)
+    history = model.fit(X, y, epochs=100, batch_size=32, validation_split=0.05,shuffle=True)
     model.save_weights("rnn.hdf5")
     model.save('rnn_model.h5')
     print('train end')
