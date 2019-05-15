@@ -9,7 +9,8 @@ Please install tensorflow, keras to run this code
 
 There are two models here.
 
-train_test.py is the model with CNN & RNN combined.
+train_test.py is the model with CNN & RNN combined (This model works best.). 
+
 train_test_fc.py is the model with fully connected layers and RNN.
 
 Just simple run the code:
