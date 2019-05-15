@@ -18,4 +18,4 @@ python train_test.py to train and test the model.
 
 You can change the training parameters in the file train_rnn.py or train_rnn_fc.py.
 
-I will update the code to convert the data to data.mat format soon.
+I will update the code to convert the fNIRS time series to data.mat format soon.
