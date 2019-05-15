@@ -1,13 +1,3 @@
-# Training model
-from train_rnn import *
-data = loadmat('data.mat')
-F1 = data['F1_1']
-F2 = data['F2_1']
-F1 = np.array(F1)
-F2 = np.array(F2)
-print(F2.shape[0])
-
-i = 2 # set up the testing subject id
 F1 = data['F1_1'] # positive 
 F2 = data['F2_1'] # negative
 F1 = np.array(F1)
@@ -46,5 +36,5 @@ f1 = np.reshape(f1,(f1.shape[0]*f1.shape[1],f1.shape[2],20,20))
 f2 = np.reshape(f2,(f2.shape[0]*f2.shape[1],f2.shape[2],20,20))
     
 yhat1,yhat2 = train_model(X,y,f1,f2)
-    
+print("predicted impaired probability for testing data f1 and f2!")    
 print(yhat1,yhat2)
