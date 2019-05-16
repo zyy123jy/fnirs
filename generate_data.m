@@ -1,3 +1,4 @@
+load('data_original.mat')
 win_size = 400 % the sliding window size
 % X_drug_p is the data for the subjects receiving THC X_pl_p is the data for the subject receiving placebo
 
