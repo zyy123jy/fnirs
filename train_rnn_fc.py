@@ -137,7 +137,7 @@ def train_model_fc(X,y,f1,f2):
     output1 = Dense(y.shape[1],activation='sigmoid')(x)
     model = Model(input=inputs, output=[output1])
     sgd = optimizers.SGD(lr=0.00005, decay=1e-6, momentum=0.9, nesterov=True)
-    adam = optimizers.Adam(lr=0.00001)
+    adam = optimizers.Adam(lr=0.0001)
     model.compile(optimizer=adam, loss=custom_crossentropy,metrics=[custom_accuracy])
     history = model.fit(X, y, epochs=100, batch_size=32, validation_split=0.1,shuffle=True)
     model.save_weights("rnn.hdf5")
