@@ -10,8 +10,8 @@ start_len = 100;
 for k=1:aug_n
     start = floor(start_len*k/aug_n);
     index = 1;
-for i = 1:length(x_pre) 
-    if length(x_pre{i}) == 0 || length(x_post{i})==0
+for i = 1:length(x_post) 
+    if  length(x_post{i})==0
         display(i);
         continue; 
 
@@ -22,7 +22,7 @@ for i = 1:length(x_pre)
     
     len2 = size(tmp2,1);    
     
-    for j=1:step:min(len1,len2)-cut
+    for j=1:step:len2-cut
       
        
         s2 = tmp2(j:j+cut,1:20);        
