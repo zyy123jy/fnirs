@@ -1,16 +1,18 @@
-data.mat is the preprocessed data. use the generate_data.m to process the data before run the py file.
-generate_data.m will generate the computed pearon correlation matrix for THC and Placebo session.
-In the computed data,  F1 is cognitive impaired and F2 is unimpaired.
+Please install tensorflow, keras to run this code.
+
+data.mat is the preprocessed data downloaded from the slack. 
+Please first use the generate_data.m to process the data.mat before run the training and testing.
+
+generate_data.m will generate the computed pearon correlation matrix for THC and Placebo session. Please modify the value of idx1 and idx2
+to select the THC and placebo session to be used.
+
+generate_data. m will generate a data file which including two tensors F1 and F2. F1 is the computed dynamic brain networks from THC and F2
+is the computed dynamic network from placebo.
+
 The size of F1, F2 is:
 Number of subjects*Augmented number* sliding window * features (20*20 for the cnn model, 400 for the fc model)
 
-Please install tensorflow, keras to run this code
-
-There are two models here.
-
-train_test_fc.py is the model with fully connected layers and RNN.
-
-Just simple run the code:
+After processed the data using generate_data.m, justs simply run:
 
 python train_test_fc.py to train and test the model.
 
