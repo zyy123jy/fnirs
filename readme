@@ -1,7 +1,6 @@
-data.mat is the preprocessed data. It included computed dynamic brain network tensor F1 and F2.
-data.mat can be downloaded here:
-
-F1 is cognitive impaired and F2 is unimpaired.
+data.mat is the preprocessed data. use the generate_data.m to process the data before run the py file.
+generate_data.m will generate the computed pearon correlation matrix for THC and Placebo session.
+In the computed data,  F1 is cognitive impaired and F2 is unimpaired.
 The size of F1, F2 is:
 Number of subjects*Augmented number* sliding window * features (20*20 for the cnn model, 400 for the fc model)
 
@@ -9,17 +8,9 @@ Please install tensorflow, keras to run this code
 
 There are two models here.
 
-train_test.py is the model with CNN & RNN combined (This model works best.). 
-
 train_test_fc.py is the model with fully connected layers and RNN.
 
 Just simple run the code:
 
 python train_test.py to train and test the model.
-
-You can change the training parameters in the file train_rnn.py or train_rnn_fc.py.
-
-The data can be downloaded here.
-
-https://www.dropbox.com/sh/qfzhe5c7pj56kqe/AABGD2rbCu-I_U7f6V8CVK9Ua?dl=0
 
