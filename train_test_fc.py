@@ -1,7 +1,7 @@
 # Training model
 from scipy.io import loadmat
 from train_rnn_fc import *
-data = loadmat('data.mat')
+data = loadmat('data-processed.mat')
 
 print(F2.shape[0])
 
