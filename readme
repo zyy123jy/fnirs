@@ -10,7 +10,7 @@ generate_data.m will generate a data file which including two tensors F1 and F2.
 is the computed dynamic network from placebo.
 
 The size of F1, F2 is:
-Number of subjects*Augmented number* sliding window * features
+Number of subjects*Augmented number*sliding window * features
 
 After processed the data using generate_data.m, run:
 
