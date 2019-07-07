@@ -3,7 +3,7 @@ Please install tensorflow, keras to run this code.
 data.mat is the preprocessed data downloaded from the slack. 
 Please first use the generate_data.m to process the data.mat before run the training and testing.
 
-generate_data.m will generate the computed pearon correlation matrix for THC and Placebo session. Please modify the value of idx1 and idx2
+generate_data.m will generate the computed Pearson's Correlation matrix for THC and Placebo session. Please modify the value of idx1 and idx2
 to select the THC and placebo session to be used.
 
 generate_data.m will generate a data file which including two tensors F1 and F2. F1 is the computed dynamic brain networks from THC and F2
