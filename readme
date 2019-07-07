@@ -6,7 +6,7 @@ Please first use the generate_data.m to process the data.mat before run the trai
 generate_data.m will generate the computed pearon correlation matrix for THC and Placebo session. Please modify the value of idx1 and idx2
 to select the THC and placebo session to be used.
 
-generate_data. m will generate a data file which including two tensors F1 and F2. F1 is the computed dynamic brain networks from THC and F2
+generate_data.m will generate a data file which including two tensors F1 and F2. F1 is the computed dynamic brain networks from THC and F2
 is the computed dynamic network from placebo.
 
 The size of F1, F2 is:
