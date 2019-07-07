@@ -12,7 +12,7 @@ is the computed dynamic network from placebo.
 The size of F1, F2 is:
 Number of subjects*Augmented number* sliding window * features
 
-After processed the data using generate_data.m, justs simply run:
+After processed the data using generate_data.m, run:
 
 python train_test_fc.py to train and test the model.
 
